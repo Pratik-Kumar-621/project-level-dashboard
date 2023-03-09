@@ -1,0 +1,82 @@
+.quick_task_manager,
+.quick_po,
+.quick_file_manager,
+.quick_quotation {
+  table {
+    th {
+      padding: 0.6rem 1rem !important;
+    }
+    td {
+      padding: 0.6rem 1rem !important;
+      .num_add {
+        display: inline-block;
+        padding: 0.1rem 0.24rem;
+        background-color: black;
+        color: white;
+        font-size: 0.6rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        background: #7b00dc;
+        &:first-child {
+          background-color: #1d3557;
+        }
+      }
+      select {
+        margin-right: 0.75rem;
+      }
+      .status_value {
+        border-radius: 4px;
+        padding: 0 1rem 0 0.36rem;
+        width: 4.2rem;
+        background: #caffd9;
+        color: #108500;
+      }
+      .status_complete {
+        background: #caffd9;
+        color: #108500;
+      }
+      .status_delay {
+        background: #cdcdcd;
+
+        color: #888888;
+      }
+      .status_progress {
+        background: #fda6ff;
+        color: #c900cd;
+      }
+      .status_type {
+        display: inline-block;
+        padding: 0rem 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border-radius: 3rem;
+      }
+      .item_updates {
+        background-color: #1d3557;
+        color: white;
+        padding: 0.25rem 1rem;
+        border-radius: 3rem;
+      }
+    }
+    .status_value_row {
+      display: flex !important;
+    }
+  }
+  button {
+    margin-top: -1rem;
+    box-shadow: none;
+    color: #000;
+    margin-left: 1rem;
+    padding: 0;
+    &:hover {
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    span {
+      padding: 0.2rem 0;
+      border-bottom: 1px solid #000;
+    }
+  }
+}

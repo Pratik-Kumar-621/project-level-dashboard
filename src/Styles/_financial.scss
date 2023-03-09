@@ -1,0 +1,69 @@
+.quick_financials {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 3fr;
+  grid-template-rows: auto auto;
+  .financial_details_section {
+    grid-row: 1/2;
+    .financial_details {
+      padding: 2.4rem 0 0 0;
+
+      .details_item {
+        display: grid;
+        grid-template-columns: 14rem auto;
+        padding: 0.5rem 0;
+        .item_head_details {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 600;
+          font-size: 0.85rem;
+          color: #444444;
+        }
+        .item_value_details {
+          font-weight: 600;
+          font-size: 1rem;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .financial_graphs {
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: self-end;
+    .graph_body {
+      padding-top: 1rem;
+      padding-right: 1rem;
+      border-left: 1px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+  .financial_table {
+    grid-row: 1/-1;
+    padding-left: 1.4rem;
+    table {
+      th {
+        padding: 0.6rem 1rem !important;
+      }
+      td {
+        padding: 0.6rem 1rem !important;
+      }
+    }
+    button {
+      margin-top: -1rem;
+      box-shadow: none;
+      color: #000;
+      margin-left: 1rem;
+      padding: 0;
+      &:hover {
+        box-shadow: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+      span {
+        padding: 0.2rem 0;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}

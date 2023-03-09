@@ -1,0 +1,167 @@
+.dashboard_main {
+  .bottom_buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // padding: 3rem 2.5rem;
+    display: flex;
+    button {
+      height: 3.6rem;
+      width: 3.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-left: 0.7rem;
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+  .dashboard_head {
+    display: flex;
+    justify-content: space-between;
+    .dashboard_heading {
+      .heading_sub {
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: #888888;
+        padding: 0.36rem 0;
+      }
+    }
+    .dashboard_timeline {
+      .timeline_value {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+      }
+      .timeline_status {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+        margin-top: 0.4rem;
+        span {
+          margin-left: 0.5rem;
+          font-size: 0.85rem;
+          font-weight: 600;
+          padding: 0.25rem 1rem;
+          border-radius: 3rem;
+          color: white;
+        }
+      }
+    }
+  }
+  .dashboard_team {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    .team_admin {
+      margin-right: 6.2rem;
+      font-weight: 600;
+      color: black;
+      span {
+        color: #888888;
+        font-weight: 500;
+      }
+    }
+    .team_members {
+      display: flex;
+      span {
+        color: #888888;
+        font-weight: 500;
+      }
+      align-items: center;
+      .team_indiv {
+        display: flex;
+        margin: 0 1rem;
+        .teams {
+          height: 2.5rem;
+          width: 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #7c33c6;
+          border: 1px solid #090074;
+          font-size: 1.25rem;
+          color: white;
+          border-radius: 50%;
+          margin-left: -0.5rem;
+        }
+      }
+      .team_count {
+        height: 1.4rem;
+        width: 1.4rem;
+        display: flex;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        background-color: #090074;
+        font-size: 0.68rem;
+        color: white;
+        border-radius: 50%;
+        margin-left: -0.5rem;
+      }
+    }
+    .team_add {
+      margin-left: 1.5rem;
+
+      button {
+        border-radius: 0.75rem;
+        font-weight: 600;
+        color: #003566;
+        border-color: #cccde5;
+      }
+    }
+  }
+  .seperator_dashboard {
+    border-bottom: 1px solid rgba(69, 69, 69, 0.25);
+    margin: 2rem -2.4rem 0;
+  }
+  .dashboard_summary {
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    .summary_type {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1rem 0;
+      .summary_item {
+        color: #454545;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        margin-left: 7.5rem;
+        div {
+          margin-left: 0.8rem;
+          width: 0.75rem;
+          height: 0.75rem;
+          border-radius: 2px;
+        }
+      }
+    }
+    .summary_content {
+      .content_item {
+        display: grid;
+        grid-template-columns: 10rem auto;
+        margin: 1.5rem 0;
+        .content_item_name {
+          font-weight: 600;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.in_progress {
+  background: #c900cd;
+}
+.not_started {
+  background: #888888;
+}
+.completed {
+  background: #79d730;
+}
+.delayed {
+  background: #ff3f3f;
+}
